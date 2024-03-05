@@ -39,11 +39,11 @@ public class TinhLuong {
 		if(DoanhThu==0) {
 			Luong=tinhluong()-KPI*tinhluong();
 			return Luong;}
-		else  { if(DoanhThu>15000000) {
-			Luong=tinhluong()+KPI*tinhluong()+LUONG_THUONG;
+		else  { if(DoanhThu>15000) {
+			Luong=tinhluong()+KPI*DoanhThu+LUONG_THUONG;
 			return Luong;
 		}
-		else Luong =tinhluong()+KPI*tinhluong();
+		else Luong =tinhluong()+KPI*DoanhThu;
 		return Luong;
 	}	
 			
